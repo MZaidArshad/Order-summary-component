@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+      --box-width: 350px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url('/pattern-background-desktop.svg');
+      background-size: 100%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      font-family: 'Outfit', sans-serif;
+      background-color: hsl(225, 100%, 94%);
+    }
+
+    @media screen and (max-width:375px) {
+      body {
+        background-image: none;
+      }
+    }
+
+    .container {
+      height: 500px;
+      width: var(--box-width);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border-radius: 15px;
+    }
+
+    .img img {
+      width: var(--box-width);
+      border-radius: 15px 15px 0px 0px;
+    }
+
+    .order-body {
+      margin: 10px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 15px 0;
+      color: hsl(223, 47%, 23%);
+    }
+
+    .order-body p {
+      font-size: 14px;
+      color: hsl(224, 23%, 55%);
+    }
+
+
+    .price-tag {
+      display: flex;
+      padding: 10px;
+      margin: 20px 0px;
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 10px;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .tag {
+      display: flex;
+    }
+
+    .tag h5 {
+      color: hsl(223, 47%, 23%);
+      font-weight: 900;
+      margin: 0 15px 5px;
+
+    }
+
+    .price-tag a {
+      color: hsl(245, 75%, 52%);
+      font-size: 14px;
+      font-weight: 700;
+      margin-right: 15px;
+    }
+
+    .price-tag a:hover {
+      text-shadow: 1px 1px 2px hsl(224, 23%, 55%);
+    }
+
+    button {
+      background-color: hsl(245, 75%, 52%);
+      width: 100%;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 10px;
+      border: none;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 1px;
+
+    }
+
+    button:hover {
+      box-shadow: 0px 7px 15px hsl(224, 23%, 55%);
+    }
+
+    .cancel-order {
+      margin-top: 20px;
+    }
+
+    .cancel-order a {
+      color: hsl(224, 23%, 55%);
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .cancel-order a:hover {
+      text-shadow: 1px 1px 2px hsl(224, 23%, 55%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="img">
+      <img src="/illustration-hero.svg" alt="Image">
+    </div>
+    <div class="order-body">
+      <h1>Order Summary</h1>
+
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
+      <div class="price-tag">
+        <div class="tag">
+          <img src="/icon-music.svg" alt="Icon">
+          <div class="txt">
+            <h5>Annual Plan</h5>
+            <p>$59.99/year</p>
+          </div>
+        </div>
+        <div class="link">
+          <a href="#">Change</a>
+        </div>
+      </div>
+      <button>Proceed to Payment</button>
+      <div class="cancel-order">
+        <a href="#">Cancel Order</a>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Get Code By Clicking on Name.<br>
+    Coded by <a href="https://github.com/MZaidArshad/Order-summary-component.git">Muhammad Zaid Arshad</a>.
+  </div>
+
+</body>
+
+</html>
